@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Turkish Learning App</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section id="header">
+    <h2 class="logo-heading">
+      <a href="#">
+        <i class="far fa-gem"></i> DuoTurko
+      </a>
+    </h2>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="learn.html">Learn</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="quiz-btn-nav">
+          <a href="quiz.html">
+            <button class="quiz">Start Quiz</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="greetings">
+    <h2 style="margin-top: 10vh ;">Turkish Numbers</h2>
+    <p>Learn essential Turkish numbers to keep things calculated</p>
+    <table >
+        <tr>
+            <th>Turkish</th>
+            <th>English</th>
+            <th>Audio</th>
+            </th>
+        </tr>
+        <tr>
+            <td>Bir</td>
+            <td>1/One</td>
+            <td>
+            <audio id="audio-bir" src="audio/numbers/pronunciation_tr_bir.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-bir')"><i class="far fa-microphone"></i>
+            </button></td>
+        </tr>
+        <tr>
+            <td>Iki</td>
+            <td>2/Two</td>
+            <td>
+            <audio id="audio-iki" src="audio/numbers/pronunciation_fi_iki.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-iki')"><i class="far fa-microphone"></i>
+            </button></td>
+
+        </tr>
+        <tr>
+            <td>Uç</td>
+            <td>3/Three</td>
+            <td>
+            <audio id="audio-uc" src="audio/numbers/pronunciation_tr_üç.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-uc')"><i class="far fa-microphone"></i></button></td>
+        </tr>
+        <tr>
+            <td>Dört</td>
+            <td>4/Four</td>
+            <td>
+            <audio id="audio-dort" src="audio/numbers/pronunciation_tr_dört.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-dort')"><i class="far fa-microphone"></i></button></td>
+        </tr>
+        <tr>
+            <td>Beş</td>
+            <td>5/Five</td>
+            <td>
+            <audio id="audio-bes" src="audio/numbers/pronunciation_az_beş.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-bes')"><i class="far fa-microphone"></i></button></td>
+        </tr>
+        <tr>
+            <td>Alti</td>
+            <td>6/Six</td>
+            <td>
+            <audio id="audio-alti" src="audio/numbers/pronunciation_tr_altı.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-alti')"><i class="far fa-microphone"></i></button></td>
+
+        </tr>
+        <tr>
+            <td>Yedi</td>
+            <td>7/Seven</td>
+            <td>
+            <audio id="audio-yedi" src="audio/numbers/pronunciation_tr_yedi.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-yedi')"><i class="far fa-microphone"></i></button></td>
+
+        </tr>
+        <tr>
+            <td>Sekiz</td>
+            <td>8/Eight</td>
+            <td>
+            <audio id="audio-sekiz" src="audio/numbers/pronunciation_tr_sekiz.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-sekiz')"><i class="far fa-microphone"></i></button></td>
+
+        </tr>
+        <tr>
+            <td>Dokuz</td>
+            <td>9/Nine</td>
+            <td>
+            <audio id="audio-dokuz" src="audio/numbers/pronunciation_tr_dokuz.mp3"></audio>
+            <button class="audio-button" onclick="playSound ('audio-dokuz')"><i class="far fa-microphone"></i></button></td>
+        </tr>
+        <tr>
+            <td>On</td>
+            <td>10/Ten</td>
+            <td>
+            <audio id="audio-on" src="audio/numbers/pronunciation_tr_ön.mp3"></audio>
+            <button class="audio-button" onclick="playSound ('audio-on')"><i class="far fa-microphone"></i></button></td>
+        </tr>
+    </table>
+  </section>
+<script src="script.js"></script>
+</body>
+</html>

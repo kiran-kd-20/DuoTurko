@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Turkish Learning App</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section id="header">
+    <h2 class="logo-heading">
+      <a href="#">
+        <i class="far fa-gem"></i> DuoTurko
+      </a>
+    </h2>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="learn.html">Learn</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="quiz-btn-nav">
+          <a href="quiz.html">
+            <button class="quiz">Start Quiz</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="greetings">
+    <h2 style="margin-top: 10vh ;">Turkish Phrases</h2>
+    <p>Learn essential Turkish phrases for daily conversation</p>
+    <table >
+        <tr>
+            <th>Turkish</th>
+            <th>English</th>
+            <th>Audio</th>
+            </th>
+        </tr>
+        <tr>
+            <td>Bu ne?</td>
+            <td>What's this?</td>
+            <td>
+            <audio id="audio-ne" src="audio/phrases/pronunciation_tr_bu_ne_.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-ne')"><i class="far fa-microphone"></i>
+            </button></td>
+        </tr>
+        <tr>
+            <td>Lütfen</td>
+            <td>Please</td>
+            <td>
+            <audio id="audio-lut" src="audio/phrases/pronunciation_tr_lütfen.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-lut')"><i class="far fa-microphone"></i>
+            </button></td>
+
+        </tr>
+        <tr>
+            <td>Ne Kadar?</td>
+            <td>How much?</td>
+            <td>
+            <audio id="audio-kadar" src="audio/phrases/pronunciation_tr_ne_kadar.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-kadar')"><i class="far fa-microphone"></i></button></td>
+        </tr>
+        <tr>
+            <td>Ne Zaman?</td>
+            <td>When?</td>
+            <td>
+            <audio id="audio-zaman" src="audio/phrases/pronunciation_tr_ne_zaman.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-zaman')"><i class="far fa-microphone"></i></button></td>
+        </tr>
+        <tr>
+            <td>Seni Cok seviyorum</td>
+            <td>I love you very much</td>
+            <td>
+            <audio id="audio-seni" src="audio/phrases/pronunciation_tr_seni_çok_seviyorum..mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-seni')"><i class="far fa-microphone"></i></button></td>
+        </tr>
+        
+    </table>
+  </section>
+<script src="script.js"></script>
+</body>
+</html>

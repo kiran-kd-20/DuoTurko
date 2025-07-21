@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Turkish Learning App</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section id="header">
+    <h2 class="logo-heading">
+      <a href="#">
+        <i class="far fa-gem"></i> DuoTurko
+      </a>
+    </h2>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="learn.html">Learn</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="quiz-btn-nav">
+          <a href="quiz.html">
+            <button class="quiz">Start Quiz</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="greetings">
+    <h2 style="margin-top: 10vh ;">Turkish Grammer</h2>
+    <p>Learn essential Turkish Grammar for easy understanding</p>
+    <table >
+        <tr>
+            <th>Turkish</th>
+            <th>English</th>
+            <th>Audio</th>
+            </th>
+        </tr>
+        <tr>
+            <td>Ben</td>
+            <td>I</td>
+            <td>
+            <audio id="audio-ben" src="audio/grammer/pronunciation_tr_ben.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-ben')"><i class="far fa-microphone"></i>
+            </button></td>
+        </tr>
+        <tr>
+            <td>Sen</td>
+            <td>You</td>
+            <td>
+            <audio id="audio-sen" src="audio/grammer/pronunciation_tr_sen.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-sen')"><i class="far fa-microphone"></i>
+            </button></td>
+
+        </tr>
+        <tr>
+            <td>Siz</td>
+            <td>You (Plural or Polite and Respect)</td>
+            <td>
+            <audio id="audio-siz" src="audio/grammer/pronunciation_tr_siz.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-siz')"><i class="far fa-microphone"></i></button></td>
+        </tr>
+        <tr>
+            <td>Onlar</td>
+            <td>They</td>
+            <td>
+            <audio id="audio-onlar" src="audio/grammer/pronunciation_tr_onlar.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-onlar')"><i class="far fa-microphone"></i></button></td>
+        </tr>
+    </table>
+  </section>
+<script src="script.js"></script>
+</body>
+</html>

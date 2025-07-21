@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Turkish Learning App</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section id="header">
+    <h2 class="logo-heading">
+      <a href="#">
+        <i class="far fa-gem"></i> DuoTurko
+      </a>
+    </h2>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="learn.html">Learn</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="quiz-btn-nav">
+          <a href="quiz.html">
+            <button class="quiz">Start Quiz</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="greetings">
+    <h2 style="margin-top: 10vh ;">Turkish Greetings</h2>
+    <p>Learn essential Turkish greetings to start your language journey</p>
+    <table >
+        <tr>
+            <th>Turkish</th>
+            <th>English</th>
+            <th>Audio</th>
+            </th>
+        </tr>
+        <tr>
+            <td>Merhaba</td>
+            <td>Hello</td>
+            <td>
+            <audio id="audio-merhaba" src="audio/greetings/pronunciation_tr_merhaba!.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-merhaba')"><i class="far fa-microphone"></i>
+            </button></td>
+        </tr>
+        <tr>
+            <td>Nasılsınız?</td>
+            <td>How are you?</td>
+            <td>
+            <audio id="audio-nasilsiniz" src="audio/greetings/pronunciation_tr_nasılsınız.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-nasilsiniz')"><i class="far fa-microphone"></i>
+            </button></td>
+
+        </tr>
+        <tr>
+            <td>Iyiyim</td>
+            <td>I'm Good</td>
+            <td>
+            <audio id="audio-iyiyim" src="audio/greetings/pronunciation_tr_iyiyim.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-iyiyim')"><i class="far fa-microphone"></i></button></td>
+        </tr>
+        <tr>
+            <td>Teşekkürler</td>
+            <td>Thanks</td>
+            <td>
+            <audio id="audio-tesekkurler" src="audio/greetings/pronunciation_tr_teşekkürler.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-tesekkurler')"><i class="far fa-microphone"></i></button></td>
+        </tr>
+        <tr>
+            <td>Gunaydin</td>
+            <td>Good Morning</td>
+            <td>
+            <audio id="audio-gunaydin" src="audio/greetings/pronunciation_tr_gunaydin.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-gunaydin')"><i class="far fa-microphone"></i></button></td>
+        </tr>
+        <tr>
+            <td>Affedarsin</td>
+            <td>Sorry</td>
+            <td>
+            <audio id="audio-affedarsin" src="audio/greetings/pronunciation_tr_affedersin.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-affedarsin')"><i class="far fa-microphone"></i></button></td>
+
+        </tr>
+        <tr>
+            <td>Güle Güle</td>
+            <td>Bye Bye</td>
+            <td>
+            <audio id="audio-gule-gule" src="audio/greetings/pronunciation_tr_güle_güle.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-gule-gule')"><i class="far fa-microphone"></i></button></td>
+
+        </tr>
+        <tr>
+            <td>Tamam</td>
+            <td>OK</td>
+            <td>
+            <audio id="audio-tamam" src="audio/greetings/pronunciation_tr_tamam.mp3"></audio>
+            <button class="audio-button" onclick="playSound('audio-tamam')"><i class="far fa-microphone"></i></button></td>
+
+        </tr>
+        <tr>
+            <td>Hadi canım</td>
+            <td>Let's Go</td>
+            <td>
+            <audio id="audio-hadi-canım" src="audio/greetings/pronunciation_tr_hadi_canım!.mp3"></audio>
+            <button class="audio-button" onclick="playSound ('audio-hadi-canım')"><i class="far fa-microphone"></i></button></td>
+
+        </tr>
+    </table>
+  </section>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Turkish Learning App</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section id="header">
+    <h2 class="logo-heading">
+      <a href="index.html">
+        <i class="far fa-gem"></i> DuoTurko
+      </a>
+    </h2>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li class="quiz-btn-nav">
+          <a href="quiz.html">
+            <button class="quiz">Start Quiz</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+   <div class="quiz-container">
+    <div class="progress-bar">
+      <label>Progress</label>
+      <progress id="progress" value="0" max="100"></progress>
+      <p id="question-count">Question</p>
+    </div>
+
+    <div class="question-section">
+      <h2 id="question-text">Loading question...</h2>
+      <div class="options" id="options"></div>
+      <button class="next-btn" id="next-btn" disabled>Next</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
